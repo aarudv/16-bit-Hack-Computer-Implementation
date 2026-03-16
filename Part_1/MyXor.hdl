@@ -1,0 +1,85 @@
+CHIP MyXor {
+    IN a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+    Nand(a=a[0], b=b[0], out=w0);
+    Nand(a=a[0], b=w0, out=w1);
+    Nand(a=b[0], b=w0, out=w2);
+    Nand(a=w1, b=w2, out=out[0]);
+
+    Nand(a=a[1], b=b[1], out=w3);
+    Nand(a=a[1], b=w3, out=w4);
+    Nand(a=b[1], b=w3, out=w5);
+    Nand(a=w4, b=w5, out=out[1]);
+
+    Nand(a=a[2], b=b[2], out=w6);
+    Nand(a=a[2], b=w6, out=w7);
+    Nand(a=b[2], b=w6, out=w8);
+    Nand(a=w7, b=w8, out=out[2]);
+
+    Nand(a=a[3], b=b[3], out=w9);
+    Nand(a=a[3], b=w9, out=w10);
+    Nand(a=b[3], b=w9, out=w11);
+    Nand(a=w10, b=w11, out=out[3]);
+
+    Nand(a=a[4], b=b[4], out=w12);
+    Nand(a=a[4], b=w12, out=w13);
+    Nand(a=b[4], b=w12, out=w14);
+    Nand(a=w13, b=w14, out=out[4]);
+
+    Nand(a=a[5], b=b[5], out=w15);
+    Nand(a=a[5], b=w15, out=w16);
+    Nand(a=b[5], b=w15, out=w17);
+    Nand(a=w16, b=w17, out=out[5]);
+
+    Nand(a=a[6], b=b[6], out=w18);
+    Nand(a=a[6], b=w18, out=w19);
+    Nand(a=b[6], b=w18, out=w20);
+    Nand(a=w19, b=w20, out=out[6]);
+
+    Nand(a=a[7], b=b[7], out=w21);
+    Nand(a=a[7], b=w21, out=w22);
+    Nand(a=b[7], b=w21, out=w23);
+    Nand(a=w22, b=w23, out=out[7]);
+
+    Nand(a=a[8], b=b[8], out=w24);
+    Nand(a=a[8], b=w24, out=w25);
+    Nand(a=b[8], b=w24, out=w26);
+    Nand(a=w25, b=w26, out=out[8]);
+
+    Nand(a=a[9], b=b[9], out=w27);
+    Nand(a=a[9], b=w27, out=w28);
+    Nand(a=b[9], b=w27, out=w29);
+    Nand(a=w28, b=w29, out=out[9]);
+
+    Nand(a=a[10], b=b[10], out=w30);
+    Nand(a=a[10], b=w30, out=w31);
+    Nand(a=b[10], b=w30, out=w32);
+    Nand(a=w31, b=w32, out=out[10]);
+
+    Nand(a=a[11], b=b[11], out=w33);
+    Nand(a=a[11], b=w33, out=w34);
+    Nand(a=b[11], b=w33, out=w35);
+    Nand(a=w34, b=w35, out=out[11]);
+
+    Nand(a=a[12], b=b[12], out=w36);
+    Nand(a=a[12], b=w36, out=w37);
+    Nand(a=b[12], b=w36, out=w38);
+    Nand(a=w37, b=w38, out=out[12]);
+
+    Nand(a=a[13], b=b[13], out=w39);
+    Nand(a=a[13], b=w39, out=w40);
+    Nand(a=b[13], b=w39, out=w41);
+    Nand(a=w40, b=w41, out=out[13]);
+
+    Nand(a=a[14], b=b[14], out=w42);
+    Nand(a=a[14], b=w42, out=w43);
+    Nand(a=b[14], b=w42, out=w44);
+    Nand(a=w43, b=w44, out=out[14]);
+
+    Nand(a=a[15], b=b[15], out=w45);
+    Nand(a=a[15], b=w45, out=w46);
+    Nand(a=b[15], b=w45, out=w47);
+    Nand(a=w46, b=w47, out=out[15]);
+}
